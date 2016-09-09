@@ -11,8 +11,7 @@ ReactDOM.render(
     <HomeRoute path='/' component={MasterPage}>
       <IndexRoute component={IndexPage} />
       <LoginRoute path='/login' component={LoginPage} />
-      <Route path='/register' component={RegistrationPage} />
-      
+      <Route path='/register' component={RegistrationPage} />      
         <AuthenticatedRoute>
           <HomeRoute path='/profile' component={ProfilePage} />
         </AuthenticatedRoute>
