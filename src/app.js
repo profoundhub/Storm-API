@@ -4,8 +4,15 @@ import ReactDOM from 'react-dom';
 import { IndexRoute, Route } from 'react-router';
 import createHashHistory from 'history/lib/createHashHistory';
 
+ReactStormpath.init();
 ReactDOM.render(
   <Router history={createHashHistory({ queryKey: false })}>
+
+
+    <Route path='/' component={MasterPage}>
+    </Route>
+
+
   </Router>,
   document.getElementById('app-container')
 );
