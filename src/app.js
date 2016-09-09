@@ -10,6 +10,7 @@ ReactDOM.render(
 
 
     <Route path='/' component={MasterPage}>
+      <IndexRoute component={IndexPage} />
     </Route>
 
 
