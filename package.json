@@ -1,0 +1,24 @@
+{
+  "name": "Storm-API",
+  "version": "1.0.0",
+  "description": "- React\r - ReactRouter\r - ES6\r - JSX\r - Storm\r - Storm React SDK\r - Express\r - Express Storm\r - Webpack\r - Babel\r - Bootstrap\r - etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profoundhub/Storm-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profoundhub/Storm-API/issues"
+  },
+  "homepage": "https://github.com/profoundhub/Storm-API#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-stormpath": "^3.1.5"
+  }
+}
