@@ -22,6 +22,8 @@ class Counter extends React.Component {
   }
 
   render() {
+    var myVariable = 123;
+    return <span>{ myVariable }</span>;
     return <span>{ this.state.current }</span>;
   }
 }
