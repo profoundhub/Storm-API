@@ -49,3 +49,4 @@ Temporary Items
 
 .env
 node_modules
+stormpath.yml
