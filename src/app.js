@@ -8,12 +8,12 @@ ReactStormpath.init();
 ReactDOM.render(
   <Router history={createHashHistory({ queryKey: false })}>
 
-    <Route path='/' component={MasterPage}>
+    <HomeRoute path='/' component={MasterPage}>
       <IndexRoute component={IndexPage} />
       <LoginRoute path='/login' component={LoginPage} />
       <Route path='/register' component={RegistrationPage} />
       <AuthenticatedRoute path='/profile' component={ProfilePage} />
-    </Route>
+    </HomeRoute>
 
   </Router>,
   document.getElementById('app-container')
