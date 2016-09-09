@@ -2,16 +2,16 @@ var path = require('path');
 var webpack = require('webpack');
 var config = require('./webpack.config');
 var compiler = webpack(config);
+var express = require('express');
+var stormpath = require('express-stormpath');
+var app = express();
+var bodyParser = require('body-parser');
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath
 }));
 
-var express = require('express');
-var stormpath = require('express-stormpath');
-
-var app = express();
 
 app.use(stormpath.init(app, {
   web: {
