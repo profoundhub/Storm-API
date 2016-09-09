@@ -22,6 +22,11 @@ export default class Header extends React.Component {
                   <LoginLink />
                 </li>
               </NotAuthenticated>
+              <Authenticated>
+                <li>
+                  <LogoutLink />
+                </li>
+              </Authenticated>
             </ul>
           </div>
         </div>
