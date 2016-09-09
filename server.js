@@ -13,7 +13,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.use(
-  stormpath.init(app, { website: true });
+  stormpath.init(app, { website: true })
 );
 
 app.post('/me', bodyParser.json(), stormpath.loginRequired, function (req, res) {
