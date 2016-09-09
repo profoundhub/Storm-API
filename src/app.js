@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, Route } from 'react-router';
 import createHashHistory from 'history/lib/createHashHistory';
-import { MasterPage, IndexPage, LoginPage, RegistrationPage, ProfilePage } from './pages';
+import { HomeRoute, MasterPage, IndexPage, LoginPage, RegistrationPage, ProfilePage } from './pages';
 import ReactStormpath, { Router, LoginRoute, AuthenticatedRoute } from 'react-stormpath';
 
 ReactStormpath.init();
