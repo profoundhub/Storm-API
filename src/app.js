@@ -1,13 +1,19 @@
+import ReactStormpath, { Router, LoginRoute, AuthenticatedRoute } from 'react-stormpath';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IndexRoute, Route } from 'react-router';
-import createHashHistory from 'history/lib/createHashHistory';
-import { HomeRoute, MasterPage, IndexPage, LoginPage, RegistrationPage, ProfilePage } from './pages';
-import ReactStormpath, { Router, LoginRoute, AuthenticatedRoute } from 'react-stormpath';
+import { IndexRoute, HomeRoute, Route, browserHistory, useRouterHistory  } from 'react-router';
+// import createHashHistory from 'history/lib/createHashHistory';
+// import createBrowserHistory from 'history/lib/createBrowserHistory';
+import { MasterPage, IndexPage, LoginPage, RegistrationPage, ProfilePage } from './pages';
 
-ReactStormpath.init();
+const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+
+ReactStormpath.init({
+  // See the API docs for available configuration options.
+});
+
 ReactDOM.render(
-  <Router history={createHashHistory({ queryKey: false })}>
+  <Router history={appHistory}>
 
     <HomeRoute path='/' component={MasterPage}>
       <IndexRoute component={IndexPage} />
