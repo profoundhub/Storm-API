@@ -20,7 +20,7 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
-
+.privates
 # OSX
 # =========================
 
@@ -42,6 +42,10 @@ $RECYCLE.BIN/
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
+
 Network Trash Folder
 Temporary Items
 .apdisk
+
+.env
+node_modules
