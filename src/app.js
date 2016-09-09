@@ -12,7 +12,10 @@ ReactDOM.render(
       <IndexRoute component={IndexPage} />
       <LoginRoute path='/login' component={LoginPage} />
       <Route path='/register' component={RegistrationPage} />
-      <AuthenticatedRoute path='/profile' component={ProfilePage} />
+      
+        <AuthenticatedRoute>
+          <HomeRoute path='/profile' component={ProfilePage} />
+        </AuthenticatedRoute>
     </HomeRoute>
 
   </Router>,
