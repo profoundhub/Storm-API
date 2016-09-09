@@ -12,11 +12,9 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-app.use(stormpath.init(app, {
-  web: {
-    produces: ['application/json']
-  }
-}));
+app.use(
+  stormpath.init(app, { website: true });
+);
 
 app.post('/me', bodyParser.json(), stormpath.loginRequired, function (req, res) {
   function writeError(message) {
