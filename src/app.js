@@ -2,10 +2,8 @@ import ReactStormpath, { Router, LoginRoute, AuthenticatedRoute } from 'react-st
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute, HomeRoute, Route, browserHistory, useRouterHistory  } from 'react-router';
-// import createHashHistory from 'history/lib/createHashHistory';
-// import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { MasterPage, IndexPage, LoginPage, RegistrationPage, ProfilePage } from './pages';
-
+import { createHashHistory } from 'history';
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
 
 ReactStormpath.init({
@@ -13,7 +11,7 @@ ReactStormpath.init({
 });
 
 ReactDOM.render(
-  <Router history={appHistory}>
+  <Router history={appHistory} />
 
     <HomeRoute path='/' component={MasterPage}>
       <IndexRoute component={IndexPage} />
