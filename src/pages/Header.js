@@ -17,11 +17,6 @@ export default class Header extends React.Component {
                   <LoginLink />
                 </li>
               </NotAuthenticated>
-              <NotAuthenticated>
-                <li>
-                  <Link to="/register">Create Account</Link>
-                </li>
-              </NotAuthenticated>
             </ul>
           </div>
         </div>
