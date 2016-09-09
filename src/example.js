@@ -7,4 +7,8 @@ class HelloWorld extends React.Component {
 ReactDOM.render(
   <HelloWorld />,
   document.getElementById('hello-world-element')
+
+  <Counter from="50" />
+  <Counter from={ myVariable } />
+
 );
