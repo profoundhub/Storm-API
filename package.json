@@ -38,6 +38,6 @@
   },
   "devDependencies": {
     "webpack-dev-middleware": "^1.6.1",
-    "yarn": "^0.16.1"
+    "yarn": "^0.17.8"
   }
 }
